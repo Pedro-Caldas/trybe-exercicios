@@ -1,8 +1,0 @@
-Bash
-Câmera
-Computador
-Internet
-Monitor
-Mouse
-Teclado
-Unix
