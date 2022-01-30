@@ -1,55 +1,60 @@
-div {
-  max-width: fit-content;
+ol li {
+  background-color: yellow;
 }
 
-div:hover {
-  border: 6px solid black;
-}
-
-div:nth-of-type(1) {
-  color: grey;
-}
-div:nth-of-type(2) {
-  color: blue;
-}
-div:nth-of-type(3) {
-  color: black;
-}
-div:nth-of-type(4) {
-  color: red;
-}
-div:nth-of-type(5) {
+ol li.par {
   color: green;
 }
 
-div:nth-of-type(1) > h3 {
-  font-style: italic;
-}
-div:nth-of-type(2) > h3 {
-  font-style: italic;
-}
-div:nth-of-type(3) > h3 {
-  font-style: italic;
-}
-div:nth-of-type(4) > h3 {
-  font-style: italic;
-}
-div:nth-of-type(5) > h3 {
-  font-style: italic;
+ol li.impar {
+  text-transform: uppercase;
 }
 
-div:nth-of-type(3) {
-  font-size: 150%;
+.header {
+  color: red;
 }
 
-div:nth-last-of-type(1) {
-  background-color: lawngreen;
+.header em {
+  font-size: 40px;
+  border: 1px solid black;
 }
 
-div:nth-last-of-type(3) {
-  background-color: lightcoral;
+li {
+  font-size: 20px;
 }
 
-div:nth-last-of-type(5) {
-  background-color: lightseagreen;
+li em {
+  font-weight: bolder;
+}
+
+.linguagens li:nth-of-type(-n+3) {
+  color: blue;
+}
+
+.linguagens li.java {
+  background-color: pink;
+}
+
+ul li:hover {
+  font-weight: bolder;
+}
+
+#stack:hover {
+  color: orange;
+}
+
+#w3:hover {
+  color: green;
+}
+
+#mdn:hover {
+  color: black;
+}
+
+#dev:hover {
+  color: yellow;
+}
+
+#trybe:hover {
+  color: green;
 }
