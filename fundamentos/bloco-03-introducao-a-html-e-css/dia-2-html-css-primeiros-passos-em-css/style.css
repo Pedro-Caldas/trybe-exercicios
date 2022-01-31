@@ -1,0 +1,31 @@
+body{
+    font-size: 16px;
+}
+h1{
+    color: orange;
+    font-size: 65px;
+    font-family: sans-serif, serif;
+}
+ul{
+    background-color: palegoldenrod;
+}
+.background-testclass{
+    background-color: plum;
+}
+p{
+    font-weight: 600;
+    font-size: 0,5em;
+    font-style: italic;
+    line-height: 1,8;
+    text-align: center;
+    text-decoration:red
+}
+#ronan{
+    background-color: red;
+}
+#rodrigo{
+    background-color: royalblue;
+}
+#isabella{
+    background-color: saddlebrown;
+}
