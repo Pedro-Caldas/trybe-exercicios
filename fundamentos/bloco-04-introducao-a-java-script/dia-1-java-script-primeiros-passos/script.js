@@ -2,12 +2,14 @@
 
 // Task 3
 
-const x = 0
+const a = 100;
+const b = 79;
+const c = 1;
 
-if (x > 0) {
-    console.log("positive");
-} else if (x < 0) {
-    console.log("negative");
+if (a < 0 || b < 0 || c < 0) {
+    console.log("Error, invalid angle");
+} else if ((a + b + c) == 180) {
+    console.log(true);
 } else {
-    console.log("zero");
+    console.log(false);
 }
