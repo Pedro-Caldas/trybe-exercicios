@@ -2,14 +2,12 @@
 
 // Task 3
 
-const a = 3
-const b = 5
-const c = 7
+const x = 0
 
-if (a > b && a > c) {
-    console.log(a);
-} else if (b > a && b > c) {
-    console.log(b);
+if (x > 0) {
+    console.log("positive");
+} else if (x < 0) {
+    console.log("negative");
 } else {
-    console.log(c);
+    console.log("zero");
 }
