@@ -1,29 +1,21 @@
 // Exercise with fifteen tasks
 
-// Task 6
+// Task 7
 
-const piece = "banana";
+const grade = 64;
 
-switch(piece.toLowerCase()) {
-    case "pawn":
-        console.log("moves one square forward");
-        break;
-    case "bishop":
-        console.log("moves n squares diagonally");
-        break;
-    case "knight":
-        console.log("moves three squares in L shape");
-        break;
-    case "rook":
-        console.log("moves n squares horizontally or vertically");
-        break;
-    case "queen":
-        console.log("moves n squares in any direction");
-        break;
-    case "king":
-        console.log("moves one square in any direction");
-        break;
-    default:
-        console.log("error, piece not found");
-        break;
+if (grade >= 90 && grade <= 100) {
+    console.log("A")
+} else if (grade >= 80 && grade <= 89) {
+    console.log("B");
+} else if (grade >= 70 && grade <= 79) {
+    console.log("C");
+} else if (grade >= 60 && grade <= 69) {
+    console.log("D");
+} else if (grade >= 50 && grade <= 59) {
+    console.log("E");
+} else if (grade < 50) {
+    console.log("F");
+} else {
+    console.log("error, grade invalid");
 }
