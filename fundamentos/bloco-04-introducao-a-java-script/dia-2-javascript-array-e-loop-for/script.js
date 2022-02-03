@@ -63,12 +63,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 6
 
-let odds = 0;
+// let odds = 0;
 
-for (let index = 0; index < numbers.length; index += 1) {
-    if ((numbers[index] % 2) != 0 ) {
-        odds = odds + 1;
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if ((numbers[index] % 2) != 0 ) {
+//         odds = odds + 1;
+//     }
+// }
+
+// console.log(odds);
+
+// Task 7
+
+let lowest = numbers[0];
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < lowest) {
+        lowest = numbers[index];
     }
 }
 
-console.log(odds);
+console.log(lowest);
