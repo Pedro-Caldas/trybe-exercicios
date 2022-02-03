@@ -1,15 +1,29 @@
 // Exercise with fifteen tasks
 
-// Task 3
+// Task 6
 
-const a = 100;
-const b = 79;
-const c = 1;
+const piece = "banana";
 
-if (a < 0 || b < 0 || c < 0) {
-    console.log("Error, invalid angle");
-} else if ((a + b + c) == 180) {
-    console.log(true);
-} else {
-    console.log(false);
+switch(piece.toLowerCase()) {
+    case "pawn":
+        console.log("moves one square forward");
+        break;
+    case "bishop":
+        console.log("moves n squares diagonally");
+        break;
+    case "knight":
+        console.log("moves three squares in L shape");
+        break;
+    case "rook":
+        console.log("moves n squares horizontally or vertically");
+        break;
+    case "queen":
+        console.log("moves n squares in any direction");
+        break;
+    case "king":
+        console.log("moves one square in any direction");
+        break;
+    default:
+        console.log("error, piece not found");
+        break;
 }
