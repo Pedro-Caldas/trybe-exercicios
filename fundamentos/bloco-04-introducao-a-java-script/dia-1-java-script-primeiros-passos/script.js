@@ -1,13 +1,14 @@
 // Exercise with fifteen tasks
 
-// Task 9
+// Task  10
 
-const a = 2;
-const b = 6;
-const c = 4;
+const custoInicial = 100;
+const valorVenda = 200;
+const custoFinal = (custoInicial + (custoInicial*0.2));
+const lucro = (valorVenda - custoFinal);
 
-if ((a % 2 != 0) || (b % 2 != 0) || (c % 2 != 0)) {
-    console.log(true);
+if (custoInicial >= 0 && valorVenda >= 0) {
+    console.log(lucro * 1000)
 } else {
-    console.log(false);
+    console.log("values not valid")
 }
