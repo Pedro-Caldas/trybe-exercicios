@@ -51,12 +51,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 5
 
-let highest = numbers[0];
+// let highest = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1) {
-    if (numbers[index] > highest) {
-        highest = numbers[index]
+// for (let index = 1; index < numbers.length; index += 1) {
+//     if (numbers[index] > highest) {
+//         highest = numbers[index]
+//     }
+// }
+
+// console.log(highest)
+
+// Task 6
+
+let odds = 0;
+
+for (let index = 0; index < numbers.length; index += 1) {
+    if ((numbers[index] % 2) != 0 ) {
+        odds = odds + 1;
     }
 }
 
-console.log(highest)
+console.log(odds);
