@@ -1,6 +1,6 @@
 // Exercise with 9 tasks
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 1
 
@@ -75,12 +75,22 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 7
 
-let lowest = numbers[0];
+// let lowest = numbers[0];
 
-for (let index = 1; index < numbers.length; index += 1) {
-    if (numbers[index] < lowest) {
-        lowest = numbers[index];
-    }
+// for (let index = 1; index < numbers.length; index += 1) {
+//     if (numbers[index] < lowest) {
+//         lowest = numbers[index];
+//     }
+// }
+
+// console.log(lowest);
+
+// Task 8
+
+let array = [0];
+
+for (let index = 1; index < 26; index += 1) {
+    array.push(index);
 }
 
-console.log(lowest);
+console.log(array);
