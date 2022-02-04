@@ -130,13 +130,26 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 2
 
-for (let i = 1; i < numbers.length; i += 1) {
-    for (let j = 0; j < numbers.length; j += 1) {
-        if (numbers[i] > numbers[j]) {
-            position = numbers[i];
-            numbers[i] = numbers[j];
-            numbers[j] = position;
-        }
+// for (let i = 1; i < numbers.length; i += 1) {
+//     for (let j = 0; j < numbers.length; j += 1) {
+//         if (numbers[i] > numbers[j]) {
+//             position = numbers[i];
+//             numbers[i] = numbers[j];
+//             numbers[j] = position;
+//         }
+//     }
+// }
+// console.log(numbers);
+
+// Task 3
+
+let multiplicado = [];
+
+for (let i = 0; i < numbers.length; i += 1) {
+    if (i < (numbers.length - 1)) { 
+        multiplicado.push(numbers[i] * numbers[i + 1]);
+    } else {
+        multiplicado.push(numbers[i] * 2);
     }
 }
-console.log(numbers);
+console.log(multiplicado);
