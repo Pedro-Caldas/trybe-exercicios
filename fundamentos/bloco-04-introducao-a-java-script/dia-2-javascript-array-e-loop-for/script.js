@@ -87,20 +87,43 @@
 
 // Task 8
 
-let array = [0];
+// let array = [0];
 
-for (let index = 1; index < 26; index += 1) {
-    array.push(index);
-}
+// for (let index = 1; index < 26; index += 1) {
+//     array.push(index);
+// }
 
 // console.log(array);
 
 // Task 9
 
-let resultadoDivisao = [0];
+// let resultadoDivisao = [0];
 
-for (let index2 = 1; index2 < array.length; index2 += 1) {
-    resultadoDivisao.push((array[index2] / 2))
+// for (let index2 = 1; index2 < array.length; index2 += 1) {
+//     resultadoDivisao.push((array[index2] / 2))
+// }
+
+// console.log(resultadoDivisao);
+
+
+
+// -------------
+
+
+
+// Bonus exercise with 3 tasks
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+// Task 1
+
+for (let i = 1; i < numbers.length; i += 1) {
+    for (let j = 0; j < numbers.length; j += 1) {
+        if (numbers[i] < numbers[j]) {
+            position = numbers[i];
+            numbers[i] = numbers[j];
+            numbers[j] = position;
+        }
+    }
 }
-
-console.log(resultadoDivisao);
+console.log(numbers);
