@@ -117,9 +117,22 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Task 1
 
+// for (let i = 1; i < numbers.length; i += 1) {
+//     for (let j = 0; j < numbers.length; j += 1) {
+//         if (numbers[i] < numbers[j]) {
+//             position = numbers[i];
+//             numbers[i] = numbers[j];
+//             numbers[j] = position;
+//         }
+//     }
+// }
+// console.log(numbers);
+
+// Task 2
+
 for (let i = 1; i < numbers.length; i += 1) {
     for (let j = 0; j < numbers.length; j += 1) {
-        if (numbers[i] < numbers[j]) {
+        if (numbers[i] > numbers[j]) {
             position = numbers[i];
             numbers[i] = numbers[j];
             numbers[j] = position;
