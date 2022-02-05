@@ -16,11 +16,41 @@
 
 // Ex. 2
 
-let word = "pedro";
-let backWord = " ";
+// let word = "pedro";
+// let backWord = " ";
 
-for (let index = word.length - 1; index >= 0; index -= 1){
-    backWord = backWord + word[index];
+// for (let index = word.length - 1; index >= 0; index -= 1){
+//     backWord = backWord + word[index];
+// }
+
+// console.log(backWord);
+
+// Ex. 3
+
+// a)
+
+// let array = ['java', 'javascript', 'python', 'html', 'css'];
+// let highest = "";
+
+// for (let index = 0; index < array.length - 1; index += 1) {
+//     if (array[index].length > array[index + 1].length && array[index].length > highest.length) {
+//         highest = array[index];
+//     }
+// }
+
+// console.log(highest);
+
+// b)
+
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let lowest = "///";
+
+for (let index = 0; index < array.length - 1; index += 1) {
+    if (array[index].length < array[index + 1].length && array[index].length <= lowest.length) {
+        lowest = array[index];
+    } else if (array[index + 1].length < array[index].length && array[index + 1].length <= lowest.length) {
+        lowest = array[index + 1]
+    }
 }
 
-console.log(backWord);
+console.log(lowest);
