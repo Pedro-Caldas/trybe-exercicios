@@ -72,10 +72,19 @@
       main.setAttribute('class', 'main-content');
       document.body.appendChild(main);
       
+      // Ex. 3
+
+      let section1 = document.createElement('section');
+      section1.setAttribute('class', 'center-content');
+      main.appendChild(section1);
+
+      // Ex. 4
+      let p1 = document.createElement('p');
+      section1.appendChild(p1);
+      p1.append('Esse texto é um teste legal');
+
       
-
-
-
+      
 
 
 
