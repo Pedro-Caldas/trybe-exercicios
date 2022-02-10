@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+
+      // Ex. 1
+      let h1 = document.createElement('h1');
+      h1.setAttribute('id', 'titulo1');
+      h1.append('Exercício 5.2 - JavaScript DOM')
+      h1.className = 'title'
+      document.body.appendChild(h1);
+
+      // Ex. 2
+      let main = document.createElement('main');
+      main.setAttribute('class', 'main-content');
+      document.body.appendChild(main);
+      
+      // Ex. 3
+      let section1 = document.createElement('section');
+      section1.setAttribute('class', 'center-content');
+      main.appendChild(section1);
+
+      // Ex. 4
+      let p1 = document.createElement('p');
+      section1.appendChild(p1);
+      p1.append('Esse texto é um teste legal');
+
+      // Ex. 5
+      let section2 = document.createElement('section');
+      section2.setAttribute('class', 'left-content');
+      main.appendChild(section2);
+
+      // Ex. 6
+      let section3 = document.createElement('section');
+      section3.setAttribute('class', 'right-content');
+      section3.setAttribute('id', 'section3');
+      main.appendChild(section3);
+
+      // Ex. 7
+      let imagem = document.createElement('img');
+      imagem.setAttribute('class', 'small-image');
+      imagem.setAttribute('src', 'https://picsum.photos/200');
+      section2.appendChild(imagem);
+
+      // Ex. 8
+      let listOfNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let list = document.createElement('ul');
+      for (let i = 0; i <= 9; i += 1) {
+        let li = document.createElement('li');
+        list.appendChild(li);
+        li.append(listOfNumbers[i])
+      }
+      section3.appendChild(list);
+
+      // Ex. 9
+      for (let i = 0; i < 3; i += 1) {
+        let h3 = document.createElement('h3')
+        h3.className = 'description';
+        main.appendChild(h3);
+      }
+
+      // Part 2 - alterações nos itens criados nos exercícios anteriores.
+
+      // Ex. 1 Adicione a classe title na tag h1 criada;
+
+      // Ex. 2 Adicione a classe description nas 3 tags h3 criadas;
+
+      // Ex. 3
+      main.removeChild(section2)
+
+      // Ex. 4
+      document.getElementById('section3').style.marginRight = 'auto';
+
+      // Ex. 5
+      document.getElementsByClassName('center-content')[0].parentNode.style.backgroundColor = 'green';
+
+      // Ex. 6
+      // let itensList = document.querySelectorAll('li')
+
+      let item9 = document.querySelectorAll('li')[9]
+      let item8 = document.querySelectorAll('li')[8]
+
+      list.removeChild(item9);
+      list.removeChild(item8);
+      
+
+
+
+
+
+
+
+
+    </script>
+  </body>
+</html>
