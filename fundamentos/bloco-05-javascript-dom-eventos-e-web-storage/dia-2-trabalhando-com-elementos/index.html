@@ -63,6 +63,7 @@
       let h1 = document.createElement('h1');
       h1.setAttribute('id', 'titulo1');
       h1.append('Exercício 5.2 - JavaScript DOM')
+      h1.className = 'title'
       document.body.appendChild(h1);
 
       // Ex. 2
@@ -88,6 +89,7 @@
       // Ex. 6
       let section3 = document.createElement('section');
       section3.setAttribute('class', 'right-content');
+      section3.setAttribute('id', 'section3');
       main.appendChild(section3);
 
       // Ex. 7
@@ -97,21 +99,53 @@
       section2.appendChild(imagem);
 
       // Ex. 8
-      let lista = document.createElement('ul');
-      for (let i = 0; i <= 10; i += 1) {
+      let listOfNumbers = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let list = document.createElement('ul');
+      for (let i = 0; i <= 9; i += 1) {
         let li = document.createElement('li');
-        lista.appendChild(li);
-        li.append([i])
+        list.appendChild(li);
+        li.append(listOfNumbers[i])
       }
-      section3.appendChild(lista);
+      section3.appendChild(list);
 
       // Ex. 9
       for (let i = 0; i < 3; i += 1) {
         let h3 = document.createElement('h3')
+        h3.className = 'description';
         main.appendChild(h3);
       }
 
+      // Part 2 - alterações nos itens criados nos exercícios anteriores.
+
+      // Ex. 1 Adicione a classe title na tag h1 criada;
+
+      // Ex. 2 Adicione a classe description nas 3 tags h3 criadas;
+
+      // Ex. 3
+      main.removeChild(section2)
+
+      // Ex. 4
+      document.getElementById('section3').style.marginRight = 'auto';
+
+      // Ex. 5
+      document.getElementsByClassName('center-content')[0].parentNode.style.backgroundColor = 'green';
+
+      // Ex. 6
+      // let itensList = document.querySelectorAll('li')
+
+      let item9 = document.querySelectorAll('li')[9]
+      let item8 = document.querySelectorAll('li')[8]
+
+      list.removeChild(item9);
+      list.removeChild(item8);
       
+
+
+
+
+
+
+
 
     </script>
   </body>
