@@ -19,7 +19,30 @@ window.onload = function () {
     document.body.style.backgroundColor = savedBackgroundColor;
 
 
+    // fontFamily
+
+
+    function setFontFamily(family) {
+        let text = document.querySelector('p');
+        text.style.fontFamily = family;
+        localStorage.setItem('fontFamily', family)
+    }
+
+    let fontFamilyButtons = document.querySelectorAll('#font-family>button');
+    for (let i = 0; i < fontFamilyButtons.length; i += 1) {
+        fontFamilyButtons[i].addEventListener('click', function (event) {
+            setFontFamily(event.target.innerHTML);
+        })
+    }
+
+    let savedFontFamily = localStorage.getItem('fontFamily');
+    document.querySelector('p').style.fontFamily = savedFontFamily;
+
+
+
+
     // fontColor
+
 
     function setFontColor(color) {
         let text = document.querySelector('p');
@@ -47,11 +70,30 @@ window.onload = function () {
         localStorage.setItem('fontSize', size);
     }
 
-    let fontSizeInput = document.querySelector('input[name="input-font-size"]')
+    let fontSizeInput = document.querySelector('input[name="input-font-size"]');
     fontSizeInput.addEventListener('input', function (event) {
         setFontSize(`${fontSizeInput.value}px`)
     })
 
     let savedFontSize = localStorage.getItem('fontSize');
     document.querySelector('p').style.fontSize = savedFontSize;
+
+
+    // lineSpacing
+
+
+    function setLineSpace(space) {
+        let text = document.querySelector('p');
+        text.style.lineHeight = space;
+        localStorage.setItem('lineSpacing', space);
+    }
+
+    let inputLineSpacing = document.querySelector('input[name="input-line-space"]');
+    inputLineSpacing.addEventListener('change', function (event) {
+        setLineSpace(inputLineSpacing.value)
+    })
+
+    let savedLineSpacing = localStorage.getItem('lineSpacing');
+    document.querySelector('p').style.lineHeight = savedLineSpacing;
+
 }
