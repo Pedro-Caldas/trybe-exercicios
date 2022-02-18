@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trybe Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>    
+        <h1>Trybe Trip</h1>
+    </header>
+
+    <form action="">
+
+        <label for="name-input">Nome:</label>
+        <input type="text" id="name-input" placeholder="Digite seu nome" minlength="10" maxlength="40">
+
+        <br>
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" placeholder="Digite seu email" minlength="10" maxlength="50">
+        
+        <br>
+        <label for="cidade-radio">Cidade</label>
+        <input type="radio" id="cidade-radio" name="destino">
+
+        <label for="campo-radio">Campo</label>
+        <input type="radio" id="campo-radio" name="destino">
+
+        <label for="praia-radio">Praia</label>
+        <input type="radio" id="praia-radio" name="destino">
+
+        <label for="montanhas-radio">Montanhas</label>
+        <input type="radio" id="montanhas-radio" name="destino">
+
+        <br>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip? <br> Escreva em até 500 caracteres.</p>
+        <textarea name="" id="razao-texto" cols="50" rows="10" class="textareas"></textarea>
+
+        <br>
+        <label for="data-viagem">Data:</label>
+        <input type="date" id="data-viagem">
+
+        <br>
+        <input type="checkbox" name="" id="promocoes-checkbox">
+        <label for="promocoes-checkbox">Eu gostaria de receber outras incríveis oportunidades oferecidas pela Trybe.</label>
+
+        <br>
+        <input type="checkbox" name="" id="fotos-checkbox" required>
+        <label for="fotos-checkbox">Eu concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+
+        <br>
+        <button type="submit" id="submit-btn">Enviar</button>
+
+        <br>
+        <input type="reset" value="Redefinir Informações">
+
+    </form> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
