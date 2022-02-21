@@ -13,5 +13,7 @@ submitBtn.addEventListener('click', event => {
     } else {
         alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip')
     }
+
+    
 })
 
