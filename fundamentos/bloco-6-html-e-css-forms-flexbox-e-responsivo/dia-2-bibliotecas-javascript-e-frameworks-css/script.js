@@ -20,3 +20,41 @@
 // })
 
 
+const validate = new window.JustValidate('#form');
+
+const validation = new JustValidate('#form');
+
+validation.addField('#name-input', [
+    {
+        rule: 'minLength',
+        value: 10,
+    },
+    {
+        rule: 'maxLength',
+        value: 40,
+    }
+]);
+validation.addField('#email-input', [
+    {
+        rule: 'required',
+        errorMessage: 'Email is required',
+    },
+    {
+        rule: 'email',
+        errorMessage: 'Email is invalid!',
+    },
+    {
+        rule: 'minLength',
+        value: 10,
+    },
+    {
+        rule: 'maxLength',
+        value: 50,
+    }
+])
+.addField('#razao-texto', [
+    {
+        rule: 'maxLength',
+        value: 500,
+    }
+]);
