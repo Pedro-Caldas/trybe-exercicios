@@ -2,11 +2,6 @@
     margin-top: 20px;
 }
 
-#resetBtn {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
 #question {
     margin-top: 20px;
 }
@@ -20,5 +15,17 @@
 }
 
 .botoes {
-    display: inline-block;
+    display: flex;
+    align-self: flex-end;
+}
+
+#btns-container {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#datepicker {
+    margin: 10px;
 }
