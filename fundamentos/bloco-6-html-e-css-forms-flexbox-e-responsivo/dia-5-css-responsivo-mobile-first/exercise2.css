@@ -48,6 +48,10 @@ html {
     header p {
         flex-basis: auto;
         padding: 1em;
+        font-size: larger;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
     }
 
     nav ul {
@@ -63,4 +67,49 @@ html {
         display: flex;
         justify-content: space-between;
     }
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding: 2em;
+        font-size: 1em;
+    }
+
+    body p {
+        font-size: large;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header p {
+        flex-basis: auto;
+        padding: 1em;
+        font-size: larger;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: ;
+        flex-grow: 1;
+        padding: 1em;
+        width: 20em;
+        justify-content: space-evenly;
+    }
+
+    .aside-container {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    h1 {
+        font-size: larger;
+    }
+
 }
