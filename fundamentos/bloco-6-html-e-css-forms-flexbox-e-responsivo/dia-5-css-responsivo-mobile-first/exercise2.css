@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
   }
 
-  .container {
+  body  {
       background-color: bisque;
   }
 
@@ -34,7 +34,33 @@ html {
 
 }
 
-@media screen and (min-width: 413px) and (max-width: 1023) {
+@media screen and (min-width: 413px) and (max-width: 1023px) {
+    body {
+        padding: 2em;
+        font-size: 1em;
+    }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    header p {
+        flex-basis: auto;
+        padding: 1em;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: ;
+        flex-grow: 1;
+        padding: 1em;
+        width: 20em;
+        justify-content: space-evenly;
+    }
+
+    .aside-container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
