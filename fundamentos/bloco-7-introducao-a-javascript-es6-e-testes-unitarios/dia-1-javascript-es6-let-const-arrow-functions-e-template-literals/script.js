@@ -86,17 +86,32 @@
 
 // Ex. 4
 
-// const tryberAqui = string => {
-//     let phrase = 'Tryber x aqui!';
-//     let newPhrase;
-//     for (let i = 0; i < phrase.length; i += 1) {
-//         phrase[i] === 'x' ?
-//         (phrase[i] = string)
-//         newPhrase = phrase
-//         : phrase[i] = phrase[i];
+const tryberAqui = (string) => {
+    const phrase = 'Tryber x aqui!';
+    let newPhrase;
+    for (i in phrase) {
+        if (phrase[i] == 'x') {
+            newPhrase = `Tryber ${string} aqui!`;
+        }
+    }
+    return newPhrase
+}
 
-//     }
-//     return 
-// }
+let skills = ['JavaScript', 'HTML', 'Python', 'CSS', 'Git'];
 
-// console.log(tryberAqui('Bebeto'))
+const tryberSkills = () => {
+    string = tryberAqui('Bebeto')
+    let sortedSkills = skills.sort();
+    let editedSkills = [];
+    for (let i = 0; i < sortedSkills.length; i += 1) {
+        if (i != (sortedSkills.length - 1)) {
+            editedSkills.push(` ${skills[i]}`)
+        } else {
+            editedSkills.push(` ${skills[i]}; ... #goTrybe`)
+        }
+    }
+    return `${string} Minhas cinco principais habilidades são:
+    ${editedSkills}`
+}
+
+console.log(tryberSkills())
