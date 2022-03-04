@@ -39,11 +39,64 @@
 
 // Ex. 2
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-const sorter = array => {
-    const sortedArray = array.sort((a, b) => a - b)
-    return sortedArray
-}
+// const sorter = array => {
+//     const sortedArray = array.sort((a, b) => a - b)
+//     return sortedArray
+// }
 
-console.log(sorter(oddsAndEvens)); // será necessário alterar essa linha
+// console.log(sorter(oddsAndEvens)); // será necessário alterar essa linha
+
+
+
+// PART 2
+
+// Ex. 1
+
+// const fatorial = number => {
+//     let fat = 1;
+//     for (let i = 1; i <= number; i += 1) {
+//         fat = fat * i;
+//     }
+//     return fat
+// }
+
+// console.log(fatorial(4))
+
+// Ex. 2
+
+// const returnLongest = string => {
+//     array = string.split(' ');
+//     let longest = '';
+//     for (let i = 0; i < array.length; i += 1) {
+//         longest = (longest.length > array[i].length) ? longest = longest : longest = array[i];
+//     }
+//     return longest
+// }
+
+// console.log(returnLongest('Antônio foi no banheiro e não sabemos o que aconteceu'))
+
+// Ex. 3
+
+// const btn = document.getElementById('btn');
+// let counter = document.getElementById('counter');
+
+// btn.addEventListener('click', () => counter.innerHTML = parseInt(counter.innerHTML) + 1)
+
+// Ex. 4
+
+// const tryberAqui = string => {
+//     let phrase = 'Tryber x aqui!';
+//     let newPhrase;
+//     for (let i = 0; i < phrase.length; i += 1) {
+//         phrase[i] === 'x' ?
+//         (phrase[i] = string)
+//         newPhrase = phrase
+//         : phrase[i] = phrase[i];
+
+//     }
+//     return 
+// }
+
+// console.log(tryberAqui('Bebeto'))
