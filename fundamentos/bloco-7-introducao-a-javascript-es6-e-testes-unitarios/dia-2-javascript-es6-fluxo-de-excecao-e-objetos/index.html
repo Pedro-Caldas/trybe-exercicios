@@ -22,7 +22,10 @@
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
       if (!value1 || !value2) {
-        throw new Error('É necessário inserir os dois números.')
+        throw new Error('É necessário inserir os dois valores.')
+      }
+      if (isNaN(value1) || isNaN(value2)) {
+        throw new Error('É necessário que os valores sejam numéricos.')
       }
     }
 
@@ -33,10 +36,11 @@
         verifyNum()
         const result = parseInt(value1) + parseInt(value2);
         document.getElementById('result').innerHTML = `Resultado: ${result}`;
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';
       } catch (error) {
         document.getElementById('result').innerHTML = `Error: ${error.message}`
+      } finally {
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
       }
     }
 
