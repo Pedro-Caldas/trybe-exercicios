@@ -24,11 +24,36 @@
 
 // Ex. 2
 
-const verifyDraw = (out, picked) => out === picked;
+// const verifyDraw = (out, picked) => out === picked;
 
-const drawFunction = (number, verifyDraw) => {
-  const draw = (Math.floor(Math.random() * 5) + 1);
-  return verifyDraw(draw, number) ? 'Parabéns você ganhou' : 'Tente novamente';
+// const drawFunction = (number, verifyDraw) => {
+//   const draw = (Math.floor(Math.random() * 5) + 1);
+//   return verifyDraw(draw, number) ? 'Parabéns você ganhou' : 'Tente novamente';
+// }
+
+// console.log(drawFunction(4, verifyDraw));
+
+// Ex .3
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const checkAnswers = (x, y) => {
+  if (x === y) {
+    return 1;
+  } if (y === 'N.A') {
+    return 0;
+  } else {
+    return -0.5;
+  }
 }
 
-console.log(drawFunction(4, verifyDraw));
+const grade = (x, y, func) => {
+  let points = 0;
+  for (let i = 0; i < x.length; i += 1) {
+    points += func(x[i], y[i])
+  }
+  return points
+}
+
+console.log(grade(RIGHT_ANSWERS, STUDENT_ANSWERS, checkAnswers));
