@@ -167,13 +167,26 @@ const books = [
 
 // Ex. 5
 
-const expectedResult = false;
+// const expectedResult = false;
 
-function everyoneWasBornOnSecXX(arr) {
-    if(arr.every((element) => element > 1900)) {
-        return true
-    }
-    return false
-}
+// function everyoneWasBornOnSecXX(arr) {
+//     if(arr.every((element) => {element.releaseYear >= 1900})) {
+//         return true
+//     }
+//     return false
+// }
 
-everyoneWasBornOnSecXX(books)
+// everyoneWasBornOnSecXX(books)
+
+// console.log(everyoneWasBornOnSecXX(books))
+
+
+
+
+// Ex. 6
+
+// const expectedResult = true;
+
+// function someBookWasReleaseOnThe80s(arr) {
+//   if(arr.some((element) => element.))
+// }
