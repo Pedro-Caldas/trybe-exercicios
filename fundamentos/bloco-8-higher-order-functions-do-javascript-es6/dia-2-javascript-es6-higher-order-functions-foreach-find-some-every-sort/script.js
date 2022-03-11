@@ -61,24 +61,46 @@ const books = [
     },
   ];
   
+
+
   // Ex. 1
 
 //   function authorBornIn1947(arr) {
 //     return arr.find((element) => element.author['birthYear'] === 1947)
 //   }
 
-  // Ex. 2
 
-  function smallerName(arr) {
-    let nameBook;
-    arr.forEach((book) => {
-        if (!nameBook || book.name.length < nameBook.length) {
-            nameBook = book.name;
-        }
-    })
-    return nameBook;
+// Ex. 2
+
+//   function smallerName(arr) {
+//     let nameBook;
+//     arr.forEach((book) => {
+//         if (!nameBook || book.name.length < nameBook.length) {
+//             nameBook = book.name;
+//         }
+//     })
+//     return nameBook;
+//   }
+
+//   console.log(smallerName(books));
+
+
+// Ex. 3
+
+const expectedResult = {
+    author: {
+      birthYear: 1948,
+      name: 'George R. R. Martin',
+    },
+    genre: 'Fantasia',
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    releaseYear: 1991,
+  };
+  
+  function getNamedBook(arr) {
+    return arr.find((book) =>  (book.name.length === 26))
   }
 
-  console.log(smallerName(books));
 
-  
+
