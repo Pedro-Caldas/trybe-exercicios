@@ -85,6 +85,7 @@ const books = [
 
 
 
+
 // Ex. 2
 
 // const sumNames = (acc, curr, index, array) => {
@@ -98,13 +99,40 @@ const books = [
 
 
 
+
 // Ex. 3
 
-const expectedResult = 43;
+// const expectedResult = 43;
 
-function averageAge(acc, curr, index, array) {
-  let resultado = acc + (curr.releaseYear - curr.author.birthYear) / array.length;
-  return Math.round(resultado);
+// function averageAge(acc, curr, index, array) {
+//   let resultado = acc + (curr.releaseYear - curr.author.birthYear) / array.length;
+//   return Math.round(resultado);
+// }
+
+// const getAvarage = (arr) => arr.reduce(averageAge, 0);
+
+
+
+
+
+// Ex. 4
+
+const expectedResult = {
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  genre: 'Fantasia',
+  author: {
+    name: 'George R. R. Martin',
+    birthYear: 1948,
+  },
+  releaseYear: 1991,
+};
+
+function getLongestNamedBook(acc, curr) {
+  const longestName = curr.name.length > acc.length ? curr : acc
+  return longestName
 }
 
-const getAvarage = (arr) => arr.reduce(averageAge, 0);
+const longestNamedBook = (arr) => arr.reduce(getLongestNamedBook, '');
+
+
