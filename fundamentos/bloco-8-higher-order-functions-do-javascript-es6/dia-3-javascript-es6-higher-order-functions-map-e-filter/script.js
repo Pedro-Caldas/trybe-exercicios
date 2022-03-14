@@ -67,9 +67,45 @@ const books = [
 
   // Ex. 1
 
-  const arrayMaker = (arr) => {
-    return arr.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
-  }
+//   const arrayMaker = (arr) => {
+//     return arr.map((element) => `${element.name} - ${element.genre} - ${element.author.name}`)
+//   }
 
+
+
+
+
+  // Ex. 2
+
+  const expectedResult = [
+    {
+      age: 31,
+      author: 'Isaac Asimov',
+    },
+    {
+      age: 38,
+      author: 'H. P. Lovecraft',
+    },
+    {
+      age: 39,
+      author: 'Stephen King',
+    },
+    {
+      age: 43,
+      author: 'George R. R. Martin',
+    },
+    {
+      age: 45,
+      author: 'Frank Herbert',
+    },
+    {
+      age: 62,
+      author: 'J. R. R. Tolkien',
+    },
+  ];
   
-
+  function nameAndAge(arr) {
+    const newArray = arr.map(element => ({ age: (element.releaseYear) - (element.author.birthYear), author: element.author.name }))
+    const sortedArray = newArray.sort((a, b) => a.age - b.age)
+    return sortedArray
+  }
