@@ -194,3 +194,31 @@ const books = [
 
 
 
+// Ex. 7
+
+const expectedResult = false;
+
+
+// Se nenhum autor nasceu no mesmo ano RETURN TRUE
+// Se dois autores nasceram no mesmo ano RETURN FALSE
+
+
+
+
+function authorUnique(arr) {
+  let result = true;
+  arr.forEach(element => {
+    let birthRepetitions = 0;
+    arr.forEach((element2) => {
+      if (element.author.birthYear === element2.author.birthYear) {
+        birthRepetitions += 1;
+      }
+    })
+    if (birthRepetitions > 1) {
+      result = false;
+    }
+  });
+  return result;
+}
+
+console.log(authorUnique(books));
