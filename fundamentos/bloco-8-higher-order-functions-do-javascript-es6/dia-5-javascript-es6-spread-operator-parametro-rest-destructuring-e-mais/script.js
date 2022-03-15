@@ -98,10 +98,31 @@
 
 // Ex. 5
 
-const myList = [1, 2, 3];
+// const myList = [1, 2, 3];
 
-// escreva swap abaixo
+// // escreva swap abaixo
 
-const swap = ([x, y, z]) => [z, y, x]
-console.log(swap(myList))
+// const swap = ([x, y, z]) => [z, y, x]
+// console.log(swap(myList))
+
+
+
+
+// Ex. 6
+
+const palio = ['Palio', 'Fiat', 2019];
+const shelbyCobra = ['Shelby Cobra', 'Ford', 1963];
+const chiron = ['Chiron', 'Bugatti', 2016];
+
+// escreva toObject abaixo
+
+function toObject(arr) {
+    const [brand, car, year] = arr;
+    const object = {
+        brand,
+        car,
+        year,
+    }
+    return object
+}
 
