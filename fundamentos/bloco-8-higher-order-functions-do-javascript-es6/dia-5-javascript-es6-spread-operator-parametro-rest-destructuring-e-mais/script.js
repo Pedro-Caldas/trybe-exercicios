@@ -1,16 +1,16 @@
 // Ex. 1
 
-// const rectangleArea = (width, height) => width * height;
+const rectangleArea = (width, height) => width * height;
 
-// const rectangle1 = [1, 2];
-// const rectangle2 = [3, 5];
-// const rectangle3 = [6, 9];
-// const rectangles = [rectangle1, rectangle2, rectangle3];
+const rectangle1 = [1, 2];
+const rectangle2 = [3, 5];
+const rectangle3 = [6, 9];
+const rectangles = [rectangle1, rectangle2, rectangle3];
 
-// rectangles.forEach((rectangle) => {
-//   rectangleArea() // altere a chamada da funcao rectangleArea
-//   console.log(rectangle[0] * rectangle[1]);
-// });
+rectangles.forEach((rectangle) => {
+  rectangleArea(...rectangles) // altere a chamada da funcao rectangleArea
+  console.log(rectangle[0] * rectangle[1]);
+});
 
 
 
@@ -180,15 +180,15 @@
 
 // Ex. 9
 
-const yearSeasons = {
-    spring: ['March', 'April', 'May'],
-    summer: ['June', 'July', 'August'],
-    autumn: ['September', 'October', 'November'],
-    winter: ['December', 'January', 'February'],
-  };
+// const yearSeasons = {
+//     spring: ['March', 'April', 'May'],
+//     summer: ['June', 'July', 'August'],
+//     autumn: ['September', 'October', 'November'],
+//     winter: ['December', 'January', 'February'],
+//   };
 
-const { spring, summer, autumn, winter } = yearSeasons;
+// const { spring, summer, autumn, winter } = yearSeasons;
 
-const months = [...spring, ...summer, ...autumn, ...winter];
+// const months = [...spring, ...summer, ...autumn, ...winter];
 
-console.log(months)
+// console.log(months)
